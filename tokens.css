@@ -1,0 +1,121 @@
+/* Astryx Styles — pure Dracula brand tokens.
+ * Plain-CSS path: `@import './tokens.css'` then use var(--color-*) / var(--dracula-*) / var(--space-*).
+ * This file is the pre-theme paint fallback. Values follow the Dracula spec UI
+ * palette (Background Light #343746 surfaces, Selection #44475A quiet edges,
+ * Current Line #6272A4 visible edges). Do not add new hexes here.
+ * Fonts: copy `fonts/` to your app's served static dir (Vite: `public/fonts/`). */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/JetBrainsMono-SemiBold.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: dark;
+
+  --dracula-bg: #282A36;
+  --dracula-current-line: #6272A4;
+  --dracula-selection: #44475A;
+  --dracula-fg: #F8F8F2;
+  --dracula-comment: #6272A4;
+  --dracula-cyan: #8BE9FD;
+  --dracula-green: #50FA7B;
+  --dracula-orange: #FFB86C;
+  --dracula-pink: #FF79C6;
+  --dracula-purple: #BD93F9;
+  --dracula-red: #FF5555;
+  --dracula-yellow: #F1FA8C;
+  --dracula-bg-light: #343746;
+  --dracula-bg-lighter: #424450;
+  --dracula-bg-dark: #21222C;
+  --dracula-functional-red: #DE5735;
+  --dracula-functional-orange: #A39514;
+  --dracula-functional-green: #089108;
+  --dracula-functional-cyan: #0081D6;
+  --dracula-functional-purple: #815CD6;
+
+  --space-gap: 23px;
+  --space-viewport: 15px;
+  --widget-content-vertical: 15px;
+  --widget-content-horizontal: 17px;
+  --widget-gap: 23px;
+  --tile-row: 96px;
+  --border-radius: 5px;
+  --radius-element: 5px;
+  --font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-background: #282A36;
+  --color-accent: #BD93F9;
+  --color-success: #50FA7B;
+  --color-error: #FF5555;
+  --color-warning: #F1FA8C;
+  --color-info: #8BE9FD;
+  --color-text-primary: #F8F8F2;
+  --color-text-secondary: #9AA1BC;
+  --color-text-disabled: #6272A4;
+  --color-text-accent: #BD93F9;
+  --color-border: #6272A4;
+  --color-widget-background: #343746;
+  --color-widget-content-border: #6272A4;
+  --color-widget-background-highlight: #44475A;
+  --color-separator: #44475A;
+  --color-popover-background: #424450;
+  --color-popover-border: #6272A4;
+  --color-graph-gridlines: #44475A;
+  --color-progress-border: #44475A;
+  --color-progress-value: #6272A4;
+  --color-widget-shadow: #21222C;
+  --color-text-highlight: #F8F8F2;
+  --color-text-paragraph: #B0B3C4;
+  --color-text-base: #9AA1BC;
+  --color-text-base-muted: #8288A6;
+  --color-text-subdue: #4C5067;
+  --color-current-line: #6272A4;
+  --color-selection: #44475A;
+  --color-primary: #BD93F9;
+  --color-positive: #50FA7B;
+  --color-negative: #FF5555;
+  --color-tag-orange: #FFB86C;
+  --color-tag-pink: #FF79C6;
+}
+
+/* Dracula scrollbars: Selection thumb on transparent track, Current Line on
+ * hover. Firefox uses the two properties; Chromium uses the pseudo-elements. */
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dracula-selection) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--dracula-selection);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--dracula-current-line);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
