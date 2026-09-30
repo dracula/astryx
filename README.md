@@ -1,4 +1,4 @@
-# Dracula for Astryx
+# Dracula for [Astryx](https://astryx.atmeta.com/)
 
 > A dark theme for [Astryx](https://astryx.atmeta.com/).
 
@@ -8,40 +8,40 @@
 
 All instructions can be found at [draculatheme.com/astryx](https://draculatheme.com/astryx).
 
-```bash
-bun add astryx-dracula
-```
+You can also follow the repository's detailed [installation guide](./INSTALL.md).
 
-```tsx
-import '@astryxdesign/core/reset.css';
-import '@astryxdesign/core/astryx.css';
-import 'astryx-dracula/tokens.css';
-import 'astryx-dracula/theme.css';
-import { Theme } from '@astryxdesign/core/theme';
-import { astryxDraculaTheme } from 'astryx-dracula';
+## Features
 
-<Theme theme={astryxDraculaTheme} mode="dark">
-  <App />
-</Theme>;
-```
+- A dark-only Astryx theme based on the official Dracula palette.
+- Prebuilt Astryx theme and plain CSS token entry points.
+- Dracula syntax highlighting, semantic status colors, and chart palettes.
+- JetBrains Mono fonts and a Lucide icon registry.
+
+## Documentation
+
+- [Installation](./INSTALL.md) covers package, Git, and manual setup.
+- [Usage](./docs/usage.md) covers integration options and troubleshooting.
+- [Brand reference](./docs/brand.md) documents the palette and semantic decisions.
 
 ## Team
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/astryx/graphs/contributors).
 
 | [![yuzu-octopus](https://github.com/yuzu-octopus.png?size=100)](https://github.com/yuzu-octopus) |
-| ----------------------------------------------------------------------------------------------- |
-| [yuzu-octopus](https://github.com/yuzu-octopus)                                                 |
+| ------------------------------------------------------------------------------------------------ |
+| [yuzu-octopus](https://github.com/yuzu-octopus)                                                  |
 
 ## Community
 
-- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
-- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
-- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
+Join thousands of vampires using Dracula Theme around the world 🦇
+
+- [X (Twitter)](https://x.com/draculatheme) and [Instagram](https://www.instagram.com/draculatheme) - Follow for tips, news, and fun.
+- [Discord](https://draculatheme.com/discord-invite) - Hang out and chat with the rest of the clan.
+- [GitHub Discussions](https://github.com/dracula/dracula-theme/discussions) - Ask questions and discuss issues.
 
 ## Dracula PRO
 
-[Dracula PRO](https://draculatheme.com/pro) - Premium color scheme and UI theme designed for programming.
+[![Dracula PRO](./.github/dracula-pro.png)](https://draculatheme.com/pro)
 
 ## License
 

@@ -6,7 +6,7 @@
  * Core: @astryxdesign/core@0.3.0
  */
 
-import { draculaIconRegistry } from './icons';
+import { draculaIconRegistry } from "./icons";
 /**
  * astryx-dracula theme — built by `bunx astryx theme build`
  * Import the CSS file alongside this module:
@@ -15,7 +15,7 @@ import { draculaIconRegistry } from './icons';
  *   import './astryx-dracula.css';
  */
 export const astryxDraculaTheme = {
-  name: 'astryx-dracula',
+  name: "astryx-dracula",
   __built: true,
   tokens: {
     "--font-size-4xs": "0.375rem",
@@ -81,9 +81,9 @@ export const astryxDraculaTheme = {
     "--duration-slow-min": "730ms",
     "--duration-slow": "975ms",
     "--duration-slow-max": "1300ms",
-    "--font-family-body": "\"JetBrains Mono\", monospace",
-    "--font-family-heading": "\"JetBrains Mono\", monospace",
-    "--font-family-code": "\"JetBrains Mono\", monospace",
+    "--font-family-body": '"JetBrains Mono", monospace',
+    "--font-family-heading": '"JetBrains Mono", monospace',
+    "--font-family-code": '"JetBrains Mono", monospace',
     "--color-syntax-keyword": "#FF79C6",
     "--color-syntax-string": "#F1FA8C",
     "--color-syntax-comment": "#6272A4",
@@ -215,51 +215,91 @@ export const astryxDraculaTheme = {
     "--color-border-yellow": "light-dark(#F1FA8C4D, #F1FA8C4D)",
     "--color-icon-yellow": "light-dark(#F1FA8C, #F1FA8C)",
     "--color-text-yellow": "light-dark(#F1FA8C, #F1FA8C)",
-    "--color-data-purple-5": "light-dark(hsl(264.71 89.47% 28%), hsl(264.71 89.47% 28%))",
-    "--color-data-purple-4": "light-dark(hsl(264.71 89.47% 44%), hsl(264.71 89.47% 44%))",
-    "--color-data-purple-3": "light-dark(hsl(264.71 89.47% 60%), hsl(264.71 89.47% 60%))",
-    "--color-data-purple-2": "light-dark(hsl(264.71 89.47% 74%), hsl(264.71 89.47% 74%))",
-    "--color-data-purple-1": "light-dark(hsl(264.71 89.47% 88%), hsl(264.71 89.47% 88%))",
-    "--color-data-pink-5": "light-dark(hsl(325.52 100% 28%), hsl(325.52 100% 28%))",
-    "--color-data-pink-4": "light-dark(hsl(325.52 100% 44%), hsl(325.52 100% 44%))",
-    "--color-data-pink-3": "light-dark(hsl(325.52 100% 60%), hsl(325.52 100% 60%))",
-    "--color-data-pink-2": "light-dark(hsl(325.52 100% 74%), hsl(325.52 100% 74%))",
-    "--color-data-pink-1": "light-dark(hsl(325.52 100% 88%), hsl(325.52 100% 88%))",
+    "--color-data-purple-5":
+      "light-dark(hsl(264.71 89.47% 28%), hsl(264.71 89.47% 28%))",
+    "--color-data-purple-4":
+      "light-dark(hsl(264.71 89.47% 44%), hsl(264.71 89.47% 44%))",
+    "--color-data-purple-3":
+      "light-dark(hsl(264.71 89.47% 60%), hsl(264.71 89.47% 60%))",
+    "--color-data-purple-2":
+      "light-dark(hsl(264.71 89.47% 74%), hsl(264.71 89.47% 74%))",
+    "--color-data-purple-1":
+      "light-dark(hsl(264.71 89.47% 88%), hsl(264.71 89.47% 88%))",
+    "--color-data-pink-5":
+      "light-dark(hsl(325.52 100% 28%), hsl(325.52 100% 28%))",
+    "--color-data-pink-4":
+      "light-dark(hsl(325.52 100% 44%), hsl(325.52 100% 44%))",
+    "--color-data-pink-3":
+      "light-dark(hsl(325.52 100% 60%), hsl(325.52 100% 60%))",
+    "--color-data-pink-2":
+      "light-dark(hsl(325.52 100% 74%), hsl(325.52 100% 74%))",
+    "--color-data-pink-1":
+      "light-dark(hsl(325.52 100% 88%), hsl(325.52 100% 88%))",
     "--color-data-red-5": "light-dark(hsl(0 100% 28%), hsl(0 100% 28%))",
     "--color-data-red-4": "light-dark(hsl(0 100% 44%), hsl(0 100% 44%))",
     "--color-data-red-3": "light-dark(hsl(0 100% 60%), hsl(0 100% 60%))",
     "--color-data-red-2": "light-dark(hsl(0 100% 74%), hsl(0 100% 74%))",
     "--color-data-red-1": "light-dark(hsl(0 100% 88%), hsl(0 100% 88%))",
-    "--color-data-orange-5": "light-dark(hsl(31.02 100% 28%), hsl(31.02 100% 28%))",
-    "--color-data-orange-4": "light-dark(hsl(31.02 100% 44%), hsl(31.02 100% 44%))",
-    "--color-data-orange-3": "light-dark(hsl(31.02 100% 60%), hsl(31.02 100% 60%))",
-    "--color-data-orange-2": "light-dark(hsl(31.02 100% 74%), hsl(31.02 100% 74%))",
-    "--color-data-orange-1": "light-dark(hsl(31.02 100% 88%), hsl(31.02 100% 88%))",
-    "--color-data-yellow-5": "light-dark(hsl(64.91 91.67% 28%), hsl(64.91 91.67% 28%))",
-    "--color-data-yellow-4": "light-dark(hsl(64.91 91.67% 44%), hsl(64.91 91.67% 44%))",
-    "--color-data-yellow-3": "light-dark(hsl(64.91 91.67% 60%), hsl(64.91 91.67% 60%))",
-    "--color-data-yellow-2": "light-dark(hsl(64.91 91.67% 74%), hsl(64.91 91.67% 74%))",
-    "--color-data-yellow-1": "light-dark(hsl(64.91 91.67% 88%), hsl(64.91 91.67% 88%))",
-    "--color-data-teal-5": "light-dark(hsl(190.53 96.61% 28%), hsl(190.53 96.61% 28%))",
-    "--color-data-teal-4": "light-dark(hsl(190.53 96.61% 44%), hsl(190.53 96.61% 44%))",
-    "--color-data-teal-3": "light-dark(hsl(190.53 96.61% 60%), hsl(190.53 96.61% 60%))",
-    "--color-data-teal-2": "light-dark(hsl(190.53 96.61% 74%), hsl(190.53 96.61% 74%))",
-    "--color-data-teal-1": "light-dark(hsl(190.53 96.61% 88%), hsl(190.53 96.61% 88%))",
-    "--color-data-blue-5": "light-dark(hsl(225.45 26.61% 28%), hsl(225.45 26.61% 28%))",
-    "--color-data-blue-4": "light-dark(hsl(225.45 26.61% 44%), hsl(225.45 26.61% 44%))",
-    "--color-data-blue-3": "light-dark(hsl(225.45 26.61% 60%), hsl(225.45 26.61% 60%))",
-    "--color-data-blue-2": "light-dark(hsl(225.45 26.61% 74%), hsl(225.45 26.61% 74%))",
-    "--color-data-blue-1": "light-dark(hsl(225.45 26.61% 88%), hsl(225.45 26.61% 88%))",
-    "--color-data-shamrock-5": "light-dark(hsl(135.18 94.44% 28%), hsl(135.18 94.44% 28%))",
-    "--color-data-shamrock-4": "light-dark(hsl(135.18 94.44% 44%), hsl(135.18 94.44% 44%))",
-    "--color-data-shamrock-3": "light-dark(hsl(135.18 94.44% 60%), hsl(135.18 94.44% 60%))",
-    "--color-data-shamrock-2": "light-dark(hsl(135.18 94.44% 74%), hsl(135.18 94.44% 74%))",
-    "--color-data-shamrock-1": "light-dark(hsl(135.18 94.44% 88%), hsl(135.18 94.44% 88%))",
-    "--color-data-gray-5": "light-dark(hsl(231.43 14.89% 28%), hsl(231.43 14.89% 28%))",
-    "--color-data-gray-4": "light-dark(hsl(231.43 14.89% 44%), hsl(231.43 14.89% 44%))",
-    "--color-data-gray-3": "light-dark(hsl(231.43 14.89% 60%), hsl(231.43 14.89% 60%))",
-    "--color-data-gray-2": "light-dark(hsl(231.43 14.89% 74%), hsl(231.43 14.89% 74%))",
-    "--color-data-gray-1": "light-dark(hsl(231.43 14.89% 88%), hsl(231.43 14.89% 88%))",
+    "--color-data-orange-5":
+      "light-dark(hsl(31.02 100% 28%), hsl(31.02 100% 28%))",
+    "--color-data-orange-4":
+      "light-dark(hsl(31.02 100% 44%), hsl(31.02 100% 44%))",
+    "--color-data-orange-3":
+      "light-dark(hsl(31.02 100% 60%), hsl(31.02 100% 60%))",
+    "--color-data-orange-2":
+      "light-dark(hsl(31.02 100% 74%), hsl(31.02 100% 74%))",
+    "--color-data-orange-1":
+      "light-dark(hsl(31.02 100% 88%), hsl(31.02 100% 88%))",
+    "--color-data-yellow-5":
+      "light-dark(hsl(64.91 91.67% 28%), hsl(64.91 91.67% 28%))",
+    "--color-data-yellow-4":
+      "light-dark(hsl(64.91 91.67% 44%), hsl(64.91 91.67% 44%))",
+    "--color-data-yellow-3":
+      "light-dark(hsl(64.91 91.67% 60%), hsl(64.91 91.67% 60%))",
+    "--color-data-yellow-2":
+      "light-dark(hsl(64.91 91.67% 74%), hsl(64.91 91.67% 74%))",
+    "--color-data-yellow-1":
+      "light-dark(hsl(64.91 91.67% 88%), hsl(64.91 91.67% 88%))",
+    "--color-data-teal-5":
+      "light-dark(hsl(190.53 96.61% 28%), hsl(190.53 96.61% 28%))",
+    "--color-data-teal-4":
+      "light-dark(hsl(190.53 96.61% 44%), hsl(190.53 96.61% 44%))",
+    "--color-data-teal-3":
+      "light-dark(hsl(190.53 96.61% 60%), hsl(190.53 96.61% 60%))",
+    "--color-data-teal-2":
+      "light-dark(hsl(190.53 96.61% 74%), hsl(190.53 96.61% 74%))",
+    "--color-data-teal-1":
+      "light-dark(hsl(190.53 96.61% 88%), hsl(190.53 96.61% 88%))",
+    "--color-data-blue-5":
+      "light-dark(hsl(225.45 26.61% 28%), hsl(225.45 26.61% 28%))",
+    "--color-data-blue-4":
+      "light-dark(hsl(225.45 26.61% 44%), hsl(225.45 26.61% 44%))",
+    "--color-data-blue-3":
+      "light-dark(hsl(225.45 26.61% 60%), hsl(225.45 26.61% 60%))",
+    "--color-data-blue-2":
+      "light-dark(hsl(225.45 26.61% 74%), hsl(225.45 26.61% 74%))",
+    "--color-data-blue-1":
+      "light-dark(hsl(225.45 26.61% 88%), hsl(225.45 26.61% 88%))",
+    "--color-data-shamrock-5":
+      "light-dark(hsl(135.18 94.44% 28%), hsl(135.18 94.44% 28%))",
+    "--color-data-shamrock-4":
+      "light-dark(hsl(135.18 94.44% 44%), hsl(135.18 94.44% 44%))",
+    "--color-data-shamrock-3":
+      "light-dark(hsl(135.18 94.44% 60%), hsl(135.18 94.44% 60%))",
+    "--color-data-shamrock-2":
+      "light-dark(hsl(135.18 94.44% 74%), hsl(135.18 94.44% 74%))",
+    "--color-data-shamrock-1":
+      "light-dark(hsl(135.18 94.44% 88%), hsl(135.18 94.44% 88%))",
+    "--color-data-gray-5":
+      "light-dark(hsl(231.43 14.89% 28%), hsl(231.43 14.89% 28%))",
+    "--color-data-gray-4":
+      "light-dark(hsl(231.43 14.89% 44%), hsl(231.43 14.89% 44%))",
+    "--color-data-gray-3":
+      "light-dark(hsl(231.43 14.89% 60%), hsl(231.43 14.89% 60%))",
+    "--color-data-gray-2":
+      "light-dark(hsl(231.43 14.89% 74%), hsl(231.43 14.89% 74%))",
+    "--color-data-gray-1":
+      "light-dark(hsl(231.43 14.89% 88%), hsl(231.43 14.89% 88%))",
     "--color-background": "light-dark(#282A36, #282A36)",
     "--color-widget-background": "light-dark(#343746, #343746)",
     "--color-widget-content-border": "light-dark(#6272A4, #6272A4)",
@@ -287,7 +327,7 @@ export const astryxDraculaTheme = {
     "--color-tag-cyan": "light-dark(#8BE9FD, #8BE9FD)",
     "--color-tag-yellow": "light-dark(#F1FA8C, #F1FA8C)",
     "--color-tag-green": "light-dark(#50FA7B, #50FA7B)",
-    "--color-tag-blue": "light-dark(#BD93F9, #BD93F9)"
+    "--color-tag-blue": "light-dark(#BD93F9, #BD93F9)",
   },
   icons: draculaIconRegistry,
 };
