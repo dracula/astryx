@@ -10,30 +10,6 @@ bun add astryx-dracula @astryxdesign/core
 
 You can use the equivalent command for npm, pnpm, or Yarn.
 
-#### Install using Git
-
-If you are a Git user, you can install the theme and keep it up to date by cloning the repository:
-
-```bash
-git clone https://github.com/dracula/astryx.git
-```
-
-#### Install manually
-
-Download the [GitHub `.zip` archive](https://github.com/dracula/astryx/archive/main.zip) and extract it.
-
-For an Astryx app, copy these files into your project:
-
-- `astryx-dracula.js`
-- `astryx-dracula.d.ts`
-- `astryx-dracula.variants.d.ts`
-- `theme.css`
-- `tokens.css`
-- `icons.tsx`
-- `fonts/`
-
-Keep the files together so their relative imports continue to resolve.
-
 #### Activating the theme
 
 Import the Astryx base styles before the Dracula styles, then wrap your application in the theme provider:

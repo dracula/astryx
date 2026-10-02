@@ -46,3 +46,7 @@ Join thousands of vampires using Dracula Theme around the world 🦇
 ## License
 
 [MIT License](./LICENSE)
+
+---
+
+*Source and releases: [yuzu-octopus/astryx-dracula](https://github.com/yuzu-octopus/astryx-dracula)*
