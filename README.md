@@ -19,7 +19,7 @@ You can also follow the repository's detailed [installation guide](./INSTALL.md)
 
 ## Documentation
 
-- [Installation](./INSTALL.md) covers package, Git, and manual setup.
+- [Installation](./INSTALL.md) covers the package install and theme activation.
 - [Usage](./docs/usage.md) covers integration options and troubleshooting.
 - [Brand reference](./docs/brand.md) documents the palette and semantic decisions.
 
