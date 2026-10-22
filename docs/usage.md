@@ -1,6 +1,6 @@
 # Using Dracula for Astryx
 
-Choose one integration path for each project. See the [installation guide](../INSTALL.md) for package, Git, and manual setup.
+Choose one integration path for each project. See the [installation guide](../INSTALL.md) for the package install and theme activation.
 
 ## Prebuilt Astryx theme
 
@@ -48,7 +48,14 @@ The token layer declares the required `@font-face` rules. If the files are unava
 
 ## Vite layer order
 
-Most applications need no special configuration. If another stylesheet overrides the theme layers, establish the Astryx layer order before loading application styles:
+Most applications need no special configuration. Astryx declares its layer
+order itself: `reset.css`, `astryx.css` and this theme's `theme.css` each open
+with `@layer reset, astryx-base, astryx-theme;`, so the theme layer overrides
+the Astryx base layer whatever order you import them in.
+
+Only add the snippet below if your project ships its OWN stylesheet layers and
+you need the Astryx ones ordered against them. The three Astryx layer names are
+the contract — do not rename them:
 
 ```ts
 import react from "@vitejs/plugin-react";
@@ -61,8 +68,7 @@ export default defineConfig({
       transformIndexHtml: () => [
         {
           tag: "style",
-          children:
-            "@layer reset, priority1, priority2, priority3, priority4, priority5, priority6, priority7, priority8, priority9, astryx-theme;",
+          children: "@layer reset, astryx-base, astryx-theme;",
           injectTo: "head-prepend",
         },
       ],
@@ -77,7 +83,6 @@ export default defineConfig({
 - **Components are unstyled:** Confirm that `reset.css` and `astryx.css` load before the Dracula files.
 - **Fonts fall back to monospace:** Confirm that both font files are available under `/fonts/`.
 - **Theme colors are overridden:** Remove conflicting root-level `--color-*` declarations and check the CSS import order.
-- **Manual installation does not resolve imports:** Keep the distributed files together or update their relative imports for your project structure.
 
 ## Theme guidelines
 
